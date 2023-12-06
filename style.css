@@ -1,0 +1,53 @@
+body,
+.graph {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.axis {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.axis.x {
+  width: 100%;
+  height: 1px;
+  background-color: #888;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.axis.y {
+  width: 1px;
+  height: 100%;
+  background-color: #888;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.point {
+  z-index: 20;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.point.blue {
+  background-color: #00f;
+}
+.point.red {
+  background-color: #f00;
+}
+.point.green {
+  background-color: #0f0;
+}
